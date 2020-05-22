@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Learning SASS</title>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>
+            Création d'un projet vide utilisant SCSS
+        </h1>
+    </header>
+    <section>
+        <h2>
+            Installation de SASS dans le projet en cours :
+        </h2>
+        <ul>
+            <li>
+                npm init <br>
+                pour la création du fichier package.json
+            </li>
+            <li>
+                npm install node-sass <br>
+                pour l'installation de SASS directement dans le projet
+            </li>
+            <li>
+                Ajouter le script <br>
+                "scripts": {<br>
+                "scss": "node-sass --watch assets/scss -o assets/css"<br>
+                }
+            </li>
+        </ul>
+        <p>
+            dans le fichier package.json juste après index.js. Si un script existe déjà, ajouter uniquement
+        </p>
+        <p class="code">
+            "scss: "node-sass --watch assets/scss -o assets/css"
+        </p>
+        <p>
+            créer une arborescence ressemblant à ceci :
+        </p>
+        <figure>
+            <img src="assets/img/arbo.png" alt="Arborescence">
+        </figure>
+    </section>
+    <section>
+        <h2>
+            Ne pas lancer NODE sur le projet inutilement
+        </h2>
+        <p>
+            Créer un fichier .gitignore dans lequel il faut insérer
+        </p>
+        <p class="code">
+            node_modules/
+        </p>
+    </section>
+    <section>
+        <h2>
+            Lancer SASS pour travailler sur les fichiers SCSS
+        </h2>
+        <p>
+            Ne pas oublier de lancer SASS une fois que tout est fait lorsque vous travailler sur vos fichier .scss
+        </p>
+        <p class="code">
+            npm run scss
+        </p>
+        <p>
+            Si vous n'en avez plus besoin, quitter le script en réalisant un CTRL+C dans le terminal.
+        </p>
+    </section>
+    </main>
+</body>
+</html>
